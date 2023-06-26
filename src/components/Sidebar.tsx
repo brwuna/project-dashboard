@@ -1,5 +1,5 @@
-import { Box, Icon, Link, Stack, Text } from "@chakra-ui/react"
-import { RiDashboardLine, RiContactsLine, RiInputMethodLine, RiGitMergeLine } from "react-icons/ri"
+import { Box, Icon, Link, Stack, Text } from "@chakra-ui/react";
+import { RiDashboardLine, RiContactsLine, RiInputMethodLine, RiGitMergeLine } from "react-icons/ri";
 
 export default function Sidebar() {
     return (
