@@ -1,8 +1,14 @@
 import { Flex, Icon, Input } from "@chakra-ui/react";
-import React from "react";
+import React, { useRef } from "react";
 import { RiSearchLine } from "react-icons/ri"
 
 export function Search() {
+    // ref vem para ajudar a criar Uncontrolled components de maneira imperativa (quando a gente diz exatamente o que quer); Declarativa: quano digo o que espero e acontece de forma automática
+    //const searchInputRef = useRef<HTMLInputElement>(null)
+
+    //toda ref tem o current (valor atual) e 
+    //console.log(searchInputRef.current.value)
+
     return (
         <Flex
             as="label"
@@ -27,6 +33,7 @@ export function Search() {
                     color: "gray.400",
                     fontSize: "sm"
                 }}
+            //ref={searchInputRef}
             />
 
             <Icon as={RiSearchLine} fontSize="20" />
