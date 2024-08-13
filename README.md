@@ -1,5 +1,5 @@
 <h1 align="center">
-    dashHub<span style="color: #ed64a6">.</span>
+    dashHub.
 </h1>
 
 <p align="center">
