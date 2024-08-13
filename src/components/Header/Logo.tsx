@@ -1,4 +1,5 @@
-import { Text } from "@chakra-ui/react";
+import { Link, Text } from "@chakra-ui/react";
+import { NavLink } from "../Sidebar/NavLink";
 
 export function Logo() {
     return (
@@ -8,10 +9,13 @@ export function Logo() {
             letterSpacing="tighter"
             w="64"
         >
-            dashGo
+            <Link
+                _hover={{ textDecoration: 'none' }}
+                href="/dashboard">
+                    dashHub
+            </Link>
             <Text
                 as="span"
-                ml="1"
                 color="pink.500"
             >
                 .

@@ -36,13 +36,13 @@ const options = {
             color: theme.colors.gray[600],
         },
         categories: [
-            '2023-06-22T00:00:00.000Z',
-            '2023-06-21T00:00:00.000Z',
-            '2023-06-20T00:00:00.000Z',
-            '2023-06-19T00:00:00.000Z',
-            '2023-06-18T00:00:00.000Z',
-            '2023-06-17T00:00:00.000Z',
-            '2023-06-16T00:00:00.000Z',
+            '2024-06-22T00:00:00.000Z',
+            '2024-06-21T00:00:00.000Z',
+            '2024-06-20T00:00:00.000Z',
+            '2024-06-19T00:00:00.000Z',
+            '2024-06-18T00:00:00.000Z',
+            '2024-06-17T00:00:00.000Z',
+            '2024-06-16T00:00:00.000Z',
         ],
     },
     fill: {
@@ -58,7 +58,10 @@ const options = {
 
 
 const series = [
-    { name: 'series1', data: [31, 120, 10, 28, 61, 18, 109] }
+    { name: 'series1', data: [190, 120, 10, 28, 61, 18, 109] },
+    { name: 'series2', data: [71, 50, 100, 48, 61, 38, 87] },
+    { name: 'series3', data: [57, 120, 40, 16, 98, 28, 64] },
+    { name: 'series4', data: [68, 140, 100, 35, 81, 38, 49] },
 ]
 
 
@@ -84,8 +87,8 @@ export default function Dashboard() {
                             borderRadius="8"
                             pb="4"
                         >
-                            <Text fontSize="lg" mb="4">Inscritos da semana</Text>
-                            <Chart options={options} series={series} type="area" height={160} />
+                            <Text fontSize="lg" mb="4">Taxa de Abertura</Text>
+                            <Chart options={options} series={[series[0]]} type="area" height={160} />
                         </Box>
 
                         <Box
@@ -94,8 +97,28 @@ export default function Dashboard() {
                             borderRadius="8"
                             pb="4"
                         >
-                            <Text fontSize="lg" mb="4">Taxa de abertura</Text>
-                            <Chart options={options} series={series} type="area" height={160} />
+                            <Text fontSize="lg" mb="4">Inscritos da Semana</Text>
+                            <Chart options={options} series={[series[1]]} type="area" height={160} />
+                        </Box>
+
+                        <Box
+                            p={["6", "8"]}
+                            bg="gray.800"
+                            borderRadius="8"
+                            pb="4"
+                        >
+                            <Text fontSize="lg" mb="4">Inscritos Mensais</Text>
+                            <Chart options={options} series={[series[2]]} type="area" height={160} />
+                        </Box>
+
+                        <Box
+                            p={["6", "8"]}
+                            bg="gray.800"
+                            borderRadius="8"
+                            pb="4"
+                        >
+                            <Text fontSize="lg" mb="4">Inscritos Anuais</Text>
+                            <Chart options={options} series={[series[3]]} type="area" height={160} />
                         </Box>
                     </SimpleGrid>
                 )}

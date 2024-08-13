@@ -11,8 +11,14 @@
     "@chakra-ui/react": "^2.7.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@faker-js/faker": "^8.4.1",
     "@hookform/resolvers": "^2.0.0",
+    "@tanstack/query-sync-storage-persister": "^5.51.21",
+    "@tanstack/react-query": "^5.28.14",
+    "@tanstack/react-query-devtools": "^5.28.14",
+    "@tanstack/react-query-persist-client": "^5.51.23",
     "apexcharts": "^3.41.0",
+    "axios": "^1.6.8",
     "framer-motion": "^6.5.1",
     "next": "13.4.6",
     "react": "18.2.0",
@@ -23,8 +29,10 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
+    "@types/faker": "^6.6.9",
     "@types/node": "20.3.1",
     "@types/react": "18.2.13",
+    "miragejs": "^0.1.48",
     "typescript": "5.1.3"
   }
 }
